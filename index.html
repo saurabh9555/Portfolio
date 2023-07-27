@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/shield.png"class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#interests">INTERESTS</a></li>
+                <li><a href="#portfolio">PHOTOS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>COLLEGE STUDENT</p>
+            <!-- <img src="images/Saurabh.jpg"> -->
+            <h1>Hi,I'm <span>Saurabh</span>   <i class="fa-solid fa-child"></i> <br>Sharma from India   <i class="fa-solid fa-flag"></i> </h1>
+        </div>
+       </div> 
+    </div><i class="fa-solid fa-child"></i>
+    <!-- -------- about<-------- -->
+    <div id="about">
+        <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Saurabh.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="text">About Me</h1>
+                <p class="font"> Hey Guys ,My name is Saurabh Sharma. I am recently a 2nd year B-Tech undergrad from IIIT-BGP.
+                Apart from this I am a front-end Developer as well and looking forward to achieve the the glory of Full-Stack Developer too.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding languages </span><br> C++, Java ,Arduino programming,</li>
+                        <li><span> Coding languages related to full-stack</span><br>HTML,CSS,JS,NODE.JS,MONGODB</li>
+                        <li><span>Robotics</span><br>Arduino programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>Reasoning and problem Solving.</span><br>I have acquired this from thorough practice of reasoning and aptitude related questions during my school days.</li>
+                        <li><span>Coding Enthusiast. </span><br> During my two years tenure of my college, I have developed apprehensive level coding skills via C++ and Java.</li>
+                        <li><span>Robotics</span><br>Since the world is shifting to AI and Machine Learning for ensuring comfort based life in future, then it's obvious for not only me but to others to shift to that era.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School</span><br>School days are those days which we can't forget although if we want to.I completed my schooling studies from St. Joseph's School(Upto class 8),Little Flower School(9-10) and  Academic Global School(11-12) </li>
+                        <li><span>Percentage </span><br>Class 10th-  89%<br>Class 12th-92% </li>
+                        <li><span>Prepared For my Jee while I was in class 12</span><br>As a result ,I got Admission in IIIT-Bhagalpur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- <----------------Services------------------> 
+     <div id="interests">
+        <div class="container">
+            <h1 class="sub-title">My Interests</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p> Web development is difficult, only then it is fun to do. You just have to set your standards. If it were to be easy, would anyone do it? ― Olawale Daniel</p>
+            <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-keyboard"></i>
+                    <h2>Coding</h2>
+                    <p>Programming is the art of algorithm design and the craft of debugging errant code. ---: Ellen Ullman</p>
+            <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-music"></i>
+                    <h2>Music and Singing</h2>
+                    <p> Words make you think. Music makes you feel. A song makes you feel a thought. ---:E.Y. Harburg </p>
+            <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+     </div>
+
+<!-- ---------------Portfolio<------------- -->
+<div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Photos</h1> 
+       <div class="work-list">
+        <div class="work">
+            <img src="images/user.jpg">
+           
+        </div>
+        <div class="work">
+            <img src="images/Saurabh.JPG">
+             
+               <!-- <a href="#"><i class="fa-solid fa-square-up-right"></i></a> -->
+            </div>
+        </div>
+        <div class="work2">
+            <img src="images/Saurabh2.jpg ">
+             
+        </div>
+       </div> 
+        <!-- <a href="#" class="btn">See More</a>  -->
+    </div>
+</div>     
+    <!-- <----------------------Contact----------------->
+  
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>    <span>ss6217372@gmail.com</span></p>
+                    <p><i class="fa-solid fa-phone"></i>     <span>9555109581</span></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100057337674378"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/sa_urabh7455?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/saurabh-sharma-a88b44246"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://instagram.com/sa_urabh7455?igshid=ZDdkNTZiNTM=""Download class="btn btn2">Follow Me On Instagram</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Send Your Response!</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Saurabh.Just made with <i class="fa-sharp fa-solid fa-heart"></i> to Rule Over the World .</p>
+        </div>
+    </div>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/cef5161577.js" crossorigin="anonymous"></script>
+    <script>
+         var tablinks=document.getElementsByClassName("tab-links");
+         var tabcontents=document.getElementsByClassName("tab-contents");
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+         }
+    </script>
+    <script>
+        var sidemen= document.getElementById("sidemenu");
+        function openmenu(){
+             sidemen.style.right="0";
+        }
+        function closemenu(){
+            sidemen.style.right="-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw76-rcCJ6IUTx17s0Ki-7WR26ICDXRO9r9Unv3ZDfA7ZLeEQtzeEUWRojcr7WAvDcm/exec'
+        const form = document.forms['submit-to-google-sheet']
+       const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Good Job.Your response is Recorded."
+               setTimeout(function(){
+                msg.innerHTML=""
+               },5000)
+               form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
